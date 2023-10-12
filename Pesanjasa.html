@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-100">
+        <nav class="bg-pink-400 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-2xl font-bold">Ryan Group</a>
+                <ul class="flex space-x-4">
+                    <li><a href="Landingpage.html" class="text-white hover:bg-pink-700 py-2 px-4 rounded">Home</a></li>
+                    <li><a href="Pesanjasa.html" class="text-white hover:bg-pink-700 py-2 px-4 rounded">Pesan jasa</a></li>
+                    <li><a href="Loginsignin.html" class="text-white hover:bg-pink-700 py-2 px-4 rounded">Login/Sign-in</a></li>
+                    <li><a href="#" class="text-white hover:bg-pink-700 py-2 px-4 rounded">Quit</a></li>
+                </ul>
+            </div>
+        </nav>
+    <header class="bg-pink-500 p-4 text-white text-center">
+        <div class="container mx-auto">
+            <img src="wp7999863.jpg" alt="logo" class="w-96 h-auto rounded-full border-4 border-pink-400 top-4 left-4 m-auto">
+            <h1 class="text-4xl font-semibold">Silahkan pesan jasa kami!</h1>
+            <p class="text-lg">Kami siap melayani Anda Dengan Sepenuh Hati!.</p>
+        </div>
+    </header>
+    <div class="container mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-semibold mb-4">Pesan Layanan Jasa</h1>
+        
+        <form id="orderForm">
+            <div class="mb-4">
+                <label for="nama" class="block text-gray-600">Nama Anda:</label>
+                <input type="text" id="nama" name="nama" class="form-input" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="layanan" class="block text-gray-600">Pilih Layanan:</label>
+                <select id="layanan" name="layanan" class="form-select">
+                    <option value="layanan1">Pembuatan Website</option>
+                    <option value="layanan2">Pembuatan Aplikasi</option>
+                    <option value="layanan3">Presentasi</option>
+                    <option value="layanan4">Ilustrasi</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="tanggal" class="block text-gray-600">Tanggal Pemesanan:</label>
+                <input type="date" id="tanggal" name="tanggal" class="form-input border border-solid border-black" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="keterangan" class="block text-gray-600">Keterangan Tambahan:</label>
+                <textarea id="keterangan" name="keterangan" rows="4" class="form-textarea"></textarea>
+            </div>
+
+            <div class="mb-4">
+                <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-black py-2 px-4 rounded-full">Pesan Layanan</button>
+            </div>
+        </form>
+
+        <div id="hasilPesan"></div>
+    </div>
+</body>
+</html>
